@@ -35,6 +35,7 @@ async function myReadFile() {
   async function myWriteFile(){
     const data = await myReadFile()
     let jsonData = JSON.stringify(data)
+
     fs.writeFile('./result.json',jsonData,function (err) {
         if (err) {
             console.log(err)
