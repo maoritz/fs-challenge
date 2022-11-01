@@ -1,0 +1,28 @@
+{
+  "name": "fs-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maoritz/fs-challenge.git"
+  },
+
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maoritz/fs-challenge/issues"
+  },
+  "homepage": "https://github.com/maoritz/fs-challenge#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "@ajar/marker": "^1.3.3"
+  }
+}
