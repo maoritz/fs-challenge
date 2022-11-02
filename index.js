@@ -4,6 +4,7 @@ import fs from 'fs/promises';
 async function myReadFile() {
     try {
       const data = await fs.readdir('./LEADS');
+
       const output = []
  
       for (let file of data){
@@ -23,18 +24,21 @@ async function myReadFile() {
         } 
     }
     return output
+    // console.log(output)
 
 
     } catch (err) {
       console.log(err);
     }
   }
-// myReadFile()
+myReadFile()
 
 
   async function myWriteFile(){
     const data = await myReadFile()
-    let jsonData = JSON.stringify(data)
+    let jsonData = JSON.stringify(data,null,2)
+
+    console.log(jsonData)
 
     fs.writeFile('./result.json',jsonData,function (err) {
         if (err) {
